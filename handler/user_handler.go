@@ -1,10 +1,10 @@
 package handler
 
 import (
-	"food-app/constant"
-	"food-app/entity"
-	"food-app/service"
-	"food-app/utils"
+	"game-api/constant"
+	"game-api/entity"
+	"game-api/service"
+	"game-api/utils"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"strconv"

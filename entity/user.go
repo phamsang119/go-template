@@ -1,7 +1,7 @@
 package entity
 
 import (
-	"food-app/utils"
+	"game-api/utils"
 	"github.com/badoux/checkmail"
 	"html"
 	"strings"

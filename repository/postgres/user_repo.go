@@ -2,8 +2,8 @@ package postgres
 
 import (
 	"errors"
-	"food-app/entity"
-	"food-app/utils"
+	"game-api/entity"
+	"game-api/utils"
 	"github.com/jinzhu/gorm"
 	"golang.org/x/crypto/bcrypt"
 	"strings"

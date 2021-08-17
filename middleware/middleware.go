@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"food-app/utils"
+	"game-api/utils"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )

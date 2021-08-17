@@ -2,7 +2,7 @@ package utils
 
 import (
 	"fmt"
-	"food-app/repository/redis"
+	"game-api/repository/redis"
 	"github.com/dgrijalva/jwt-go"
 	"github.com/twinj/uuid"
 	"net/http"

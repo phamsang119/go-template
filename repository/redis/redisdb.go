@@ -3,7 +3,7 @@ package redis
 import (
 	"context"
 	"fmt"
-	"food-app/config"
+	"game-api/config"
 	"github.com/go-redis/redis/v8"
 )
 

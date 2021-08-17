@@ -2,8 +2,8 @@ package postgres
 
 import (
 	"fmt"
-	"food-app/config"
-	"food-app/entity"
+	"game-api/config"
+	"game-api/entity"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 )

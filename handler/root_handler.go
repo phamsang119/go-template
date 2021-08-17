@@ -1,6 +1,6 @@
 package handler
 
-import "food-app/service"
+import "game-api/service"
 
 type RootHandler struct {
 	service *service.Service

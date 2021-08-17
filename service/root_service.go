@@ -1,7 +1,7 @@
 package service
 
 import (
-	"food-app/repository/postgres"
+	"game-api/repository/postgres"
 )
 
 type Service struct {

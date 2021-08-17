@@ -1,8 +1,8 @@
 package handler
 
 import (
-	"food-app/service"
-	"food-app/utils"
+	"game-api/service"
+	"game-api/utils"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )

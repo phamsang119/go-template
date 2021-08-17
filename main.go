@@ -3,12 +3,12 @@ package main
 import (
 	"context"
 	"fmt"
-	"food-app/config"
-	"food-app/handler"
-	"food-app/middleware"
-	"food-app/repository/postgres"
-	"food-app/repository/redis"
-	"food-app/service"
+	"game-api/config"
+	"game-api/handler"
+	"game-api/middleware"
+	"game-api/repository/postgres"
+	"game-api/repository/redis"
+	"game-api/service"
 	"github.com/gin-gonic/gin"
 )
 

@@ -1,8 +1,8 @@
 package service
 
 import (
-	"food-app/entity"
-	"food-app/repository/postgres"
+	"game-api/entity"
+	"game-api/repository/postgres"
 )
 
 type userSvc struct {
