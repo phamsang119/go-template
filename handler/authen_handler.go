@@ -11,8 +11,8 @@ type AuthenHandler struct {
 	us service.UserService
 }
 
-// NewAuthenticate AuthenHandler constructor
-func NewAuthenticate(uApp service.UserService) *AuthenHandler {
+// NewAuthenHandler  constructor
+func NewAuthenHandler(uApp service.UserService) *AuthenHandler {
 	return &AuthenHandler{
 		us: uApp,
 	}

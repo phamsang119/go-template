@@ -4,18 +4,14 @@ import "game-api/service"
 
 type RootHandler struct {
 	service *service.Service
-	AuthenHandler
-	UsersHandler
+	*AuthenHandler
+	*UsersHandler
 }
 
-func NewHandler(service *service.Service) *RootHandler {
+func NewHandler(svc *service.Service) *RootHandler {
 	return &RootHandler{
-		service: service,
-		AuthenHandler: AuthenHandler{
-			us: *service.UserService,
-		},
-		UsersHandler: UsersHandler{
-			us: *service.UserService,
-		},
+		service:       svc,
+		AuthenHandler: NewAuthenHandler(svc.UserService),
+		UsersHandler:  NewUsers(svc.UserService),
 	}
 }
