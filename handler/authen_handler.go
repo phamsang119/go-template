@@ -2,7 +2,6 @@ package handler
 
 import (
 	"game-api/service"
-	"game-api/utils"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
@@ -20,10 +19,10 @@ func NewAuthenHandler(uApp service.UserService) *AuthenHandler {
 
 func (au *AuthenHandler) Login(c *gin.Context) {
 
-	utils.Resolve(c, http.StatusOK, nil)
+	Resolve(c, http.StatusOK, nil)
 }
 
 func (au *AuthenHandler) Logout(c *gin.Context) {
 
-	utils.Resolve(c, http.StatusOK, nil)
+	Resolve(c, http.StatusOK, nil)
 }

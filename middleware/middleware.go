@@ -1,6 +1,7 @@
 package middleware
 
 import (
+	"game-api/handler"
 	"game-api/utils"
 	"github.com/gin-gonic/gin"
 	"net/http"
@@ -10,7 +11,7 @@ func AuthMiddleware() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		err := utils.TokenValid(c.Request)
 		if err != nil {
-			utils.Reject(c, http.StatusUnauthorized, http.StatusUnauthorized, "", nil)
+			handler.Reject(c, http.StatusUnauthorized, http.StatusText(http.StatusUnauthorized), nil)
 			c.Abort()
 			return
 		}
